@@ -2,9 +2,11 @@ import { useQuery } from "@tanstack/react-query";
 import axios from "axios";
 import { useGlobalContext } from "./context";
 
-const url = `https://api.unsplash.com/search/photos?client_id=${
-  import.meta.env.VITE_API_KEY
-}`;
+// const url = `https://api.unsplash.com/search/photos?client_id=${
+//   import.meta.env.VITE_API_KEY
+// }`;
+const url = `https://api.unsplash.com/search/photos?client_id=l5sJHaigWgWy-9_WLrtEUxlkFZ01o8db8vkez4bkM_M`;
+
 const Gallery = () => {
   const { searchTerm } = useGlobalContext();
   const response = useQuery({
